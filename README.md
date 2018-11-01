@@ -28,3 +28,5 @@ Commit work. “Save” your work as you go by making commits (git add <file>, t
 Rebase. As you work, integrate your changes with master regularly by rebasing (git rebase <branch>). Rebasing changes the base of your branch to the last commit on the branch you are rebasing against, then replays your commits on top of it. Essentially, git history is rewritten so that your work is always added to the latest master. Note that when you rebase you may find yourself resolving merge conflicts if someone worked on similar areas of the codebase.
 Have your code reviewed. When a branch is ready to be merged (after rebasing and pushing your latest changes), open a pull request on the original remote repository (not your fork) to start the review process. Have a colleague review your pull request, discuss changes, and make any agreed upon revisions.
 Merge into master. Once the changes have passed the review process, merge them into the master branch!
+
+Test test test
