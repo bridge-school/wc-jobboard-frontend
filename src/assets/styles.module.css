@@ -73,7 +73,6 @@ body {
   background-color: var(--color-primary);
   color: #ffffff;
 }
-
 .input {
   line-height: 2.8rem;
   -webkit-appearance: none;

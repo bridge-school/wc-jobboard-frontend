@@ -1,18 +1,18 @@
 @import './variables.css';
 
 .container {
-  composes: centeredContainer from 'appAssets/css/styles.module.css';
+  composes: centeredContainer from './styles.module.css';
 }
 
 .title {
-  composes: h1 from 'appAssets/css/styles.module.css';
+  composes: h1 from './styles.module.css';
 }
 
 .slogan {
-  composes: h2 from 'appAssets/css/styles.module.css';
+  composes: h2 from './styles.module.css';
 }
 
-// Sidebar
+/* // Sidebar */
 
 .sidebar {
   height: 100%;

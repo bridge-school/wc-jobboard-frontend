@@ -24,6 +24,17 @@ const styles = (theme) => ({
       backgroundColor: theme.palette.primary.main,
       }
   },
+  
+  // Note: This is a temporary fix to set the Post a Job Buttons to the color pink
+  flatPrimary: {
+    color: theme.palette.primary.contrastText,
+    backgroundColor:'#E81848',
+
+    '&:hover': {
+      opacity: 0.6,
+      backgroundColor:'#E81848',
+      }
+  },
 
   flatSecondary: {
     color: theme.palette.primary.main,
