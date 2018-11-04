@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import StyledButton from './components/common/StyledButton';
+import Navigation from './components/navigation/Navigation';
 
 const Index = () => <h2>Post a new job</h2>;
 
@@ -13,7 +14,7 @@ class App extends Component {
           <StyledButton component={Link} to="/jobs/post-a-job" color="primary">
             Post a Job
           </StyledButton>
-
+          {/* <Navigation /> */}
           <Route path="/jobs/post-a-job" exact component={Index} />
         </div>
       </Router>
