@@ -21,9 +21,6 @@ import JobInfo from './JobInfo';
 
 import css from '../../assets/onboarding.module.css';
 
-const CURRENT_PAGE = 'profile';
-const PAGE_TITLE = "Get started - Profile"
-
 const JobForm = props => {
   return (
     <div className={css.registrationForm}>

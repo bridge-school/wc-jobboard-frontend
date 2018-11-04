@@ -15,16 +15,15 @@ const styles = (theme) => ({
     marginLeft: '2px',
     marginRight: '2px',
   },
-  flatPrimary: {
-    color: theme.palette.primary.contrastText,
-    backgroundColor: theme.palette.primary.main,
+  // flatPrimary: {
+  //   color: theme.palette.primary.contrastText,
+  //   backgroundColor: theme.palette.primary.main,
 
-    '&:hover': {
-      opacity: 0.6,
-      backgroundColor: theme.palette.primary.main,
-      }
-  },
-  
+  //   '&:hover': {
+  //     opacity: 0.6,
+  //     backgroundColor: theme.palette.primary.main,
+  //     }
+  // },
   // Note: This is a temporary fix to set the Post a Job Buttons to the color pink
   flatPrimary: {
     color: theme.palette.primary.contrastText,
