@@ -4,13 +4,13 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
-import Hidden from '@material-ui/core/Hidden';
+// import Hidden from '@material-ui/core/Hidden';
 // import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 // App
 import Logo from '../../assets/images/logo_women_and_color.svg';
-import StyledButton from '../common/StyledButton';
+// import StyledButton from '../common/StyledButton';
 
 const styles = theme => ({
   root: {
