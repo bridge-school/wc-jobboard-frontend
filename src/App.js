@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import StyledButton from './components/common/StyledButton';
-import Navigation from './components/navigation/Navigation';
+// import Navigation from './components/navigation/Navigation';
 
 const Index = () => <h2>Post a new job</h2>;
 
