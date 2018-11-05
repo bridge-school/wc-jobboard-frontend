@@ -17,16 +17,15 @@ import FormField from '../../components/common/FormField';
 // import ImageUpload from 'appCommon/ImageUpload';
 // import DefaultLayout from '../../components/layouts/Default';
 
-import css from '../../assets/onboarding.module.css';
+import css from '../../assets/benefits.module.css';
 
-const EmployeeBenefits = () => {
+const EmployeeBenefits = (props) => {
     return (
         <div>
-        <h2 className={css.registrationFormHeader}>Employee Benefits</h2>
+        <h2>Employee Benefits</h2>
 
-
-        <FormField fullWidth className={css.formControl}>
-          <FormLabel component="legend">
+        <FormField>
+          <FormLabel component="legend" className={css.hightlight}>
             Bathrooms
           </FormLabel>
           <FormGroup
@@ -56,8 +55,8 @@ const EmployeeBenefits = () => {
           </FormGroup>
         </FormField>
 
-        <FormField fullWidth className={css.formControl}>
-          <FormLabel component="legend">
+        <FormField fullWidth className={css.hightlight}>
+          <FormLabel component="legend" >
             Days Off
           </FormLabel>
           <FormGroup
@@ -87,7 +86,7 @@ const EmployeeBenefits = () => {
           </FormGroup>
         </FormField>
 
-        <FormField fullWidth className={css.formControl}>
+        <FormField fullWidth className={css.hightlight}>
           <FormLabel component="legend">
             Employee development
           </FormLabel>
