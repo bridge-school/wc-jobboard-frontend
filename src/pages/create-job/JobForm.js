@@ -21,8 +21,7 @@ import JobInfo from './JobInfo';
 
 // import ImageUpload from 'appCommon/ImageUpload';
 // import DefaultLayout from '../../components/layouts/Default';
-
-import css from '../../assets/onboarding.module.css';
+// import css from '../../assets/onboarding.module.css';
 
 const styles = theme => ({
   createJob: {
