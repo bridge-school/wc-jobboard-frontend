@@ -5,7 +5,8 @@ import StyledButton from './components/common/StyledButton';
 import JobForm from './pages/create-job/JobForm';
 // import Navigation from './components/navigation/Navigation';
 
-const CreateJobPage = () => {
+
+const CreateJobPage = ({classes}) => {
   return(
     <div>
       <StyledButton component={Link} to="/" color="secondary">

@@ -25,7 +25,11 @@ const EmployeeBenefits = (props) => {
         <h2>Employee Benefits</h2>
 
         <FormField>
-          <FormLabel component="legend" className={css.hightlight}>
+          <FormLabel 
+            component="legend" 
+            className={css.hightlight}
+            size="small"
+          >
             Bathrooms
           </FormLabel>
           <FormGroup

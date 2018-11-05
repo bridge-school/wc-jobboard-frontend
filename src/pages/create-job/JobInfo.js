@@ -18,13 +18,18 @@ import FormField from '../../components/common/FormField';
 // import DefaultLayout from '../../components/layouts/Default';
 
 import css from '../../assets/onboarding.module.css';
+import { withStyles } from '@material-ui/core/styles';
+
+
+const styles = theme => ({
+    // ...enter style classes here
+});
 
 const JobInfo = () => {
     return (
         <div>
             <h2 className={css.registrationFormHeader}>Job Info</h2>
             <FormField className={css.formControl}>
-            <FormLabel component="legend">Upload your photo</FormLabel>
             {/* <ImageUpload /> */}
             <StyledButton label="Clear" type="submit" color="secondary">
                 Select logo
@@ -33,16 +38,20 @@ const JobInfo = () => {
             <FormField fullWidth className={css.formControl}>
             <TextField
                 required
-                label="Job Title"
+                label="Job title"
                 InputLabelProps={{ required: false }}
+                margin="dense"
+                variant="outlined"
             />
             </FormField>
 
             <FormField fullWidth className={css.formControl}>
             <TextField
                 required
-                label="Company Name"
+                label="Company name"
                 InputLabelProps={{ required: false }}
+                margin="dense"
+                variant="outlined"
             />
             </FormField>
 
@@ -51,6 +60,8 @@ const JobInfo = () => {
                 required
                 label="City"
                 InputLabelProps={{ required: false }}
+                margin="dense"
+                variant="outlined"
             />
             </FormField>
             <FormField fullWidth className={css.formControl}>
@@ -58,10 +69,12 @@ const JobInfo = () => {
                 required
                 label="Link for job post"
                 InputLabelProps={{ required: false }}
+                margin="dense"
+                variant="outlined"
             />
             </FormField>
         </div>
     )
 }
 
-export default JobInfo;
+export default withStyles(styles)(JobInfo);
