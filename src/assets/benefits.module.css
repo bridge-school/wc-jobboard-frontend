@@ -1,0 +1,13 @@
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import './variables.css'; */
+
+.hightlight{
+    text-transform: uppercase;
+    color: #101018;	
+    font-family: "Open Sans";	
+    font-size: 14px;	
+    font-weight: 600;	
+    line-height: 21px;
+    border-bottom: 2px solid#FFB858;
+}
