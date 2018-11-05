@@ -150,5 +150,4 @@ const EmployeeBenefits = (props) => {
     )
 }
 
-
 export default EmployeeBenefits;

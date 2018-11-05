@@ -68,11 +68,11 @@ body {
   border: 1px solid transparent;
 }
 
-/*.button-primary {
+.button-primary {
   composes: button;
   background-color: var(--color-primary);
   color: #ffffff;
-}*/
+}
 .input {
   line-height: 2.8rem;
   -webkit-appearance: none;
@@ -91,9 +91,6 @@ body {
   padding-left: 20px;
   display: flex;
   align-items: center;
-  margin-left: 200px;
-  margin-right: 200px;
-  order: 1;
 }
 
 .profilePhoto {
