@@ -25,7 +25,8 @@ import JobInfo from './JobInfo';
 
 const styles = theme => ({
   createJob: {
-    background: '#EFEEEA'
+    background: '#EFEEEA',
+    paddingTop: '100px'
   },
   card: {
     borderRadius: '8px',
@@ -38,6 +39,7 @@ const styles = theme => ({
   jobHeader: {
     maxWidth: '1000px',
     margin: 'auto',
+
   },
   adjacentButtons: {
     display: 'block'
