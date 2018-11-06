@@ -39,7 +39,7 @@ const styles = theme => ({
   jobHeader: {
     maxWidth: '1000px',
     margin: 'auto',
-
+    
   },
   adjacentButtons: {
     display: 'block'

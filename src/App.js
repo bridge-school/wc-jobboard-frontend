@@ -10,7 +10,7 @@ import Navigation from './components/navigation/Navigation';
 const CreateJobPage = (props) => {
   return(
     <div>
-    <Navigation path={props.path} color={props.color} title={props.title} />
+      <Navigation path={props.path} color={props.color} title={props.title} />
       <JobForm/>
     </div>
   )
