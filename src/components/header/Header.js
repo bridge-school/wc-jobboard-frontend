@@ -12,14 +12,14 @@ import { withStyles } from '@material-ui/core/styles';
 // import StyledButton from '../common/StyledButton';
 // import { updateSearchParams } from 'appRedux/modules/speaker';
 // import { searchForm } from 'appAssets/css/styles.module.css';
-import css from '../../assets/css/header.module.css';
+import '../../assets/header.module.css';
 
 const styles = theme => ({
 })
 
 
 class Header extends Component {
-  render(css) {
+  render() {
     return (
       <Grid container justify="center" className="banner" spacing={0}>
         <Grid item xs={10} md={8}>
