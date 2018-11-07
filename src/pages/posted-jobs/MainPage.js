@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import Navigation from '../../components/navigation/Navigation';
-import { connect } from 'react-redux';
-import { jobsRef } from '../../App';
+// import { connect } from 'react-redux';
+// import { jobsRef } from '../../App';
 import {checkApiServer} from '../../api/index';
 
-const mapDispatchToProps = {
+// const mapDispatchToProps = {
 
-}
+// }
 
 class MainPage extends Component {
 	componentDidMount(){
@@ -21,10 +21,11 @@ class MainPage extends Component {
 		)
 	}
 }
+export default MainPage;
 
-const MainPageContainer = connect(
-	null, // state
-	mapDispatchToProps, //dispatch action - this is where we pass the thunk
-)(MainPage)
+// const MainPageContainer = connect(
+// 	null, // state
+// 	mapDispatchToProps, //dispatch action - this is where we pass the thunk
+// )(MainPage)
 
-export default MainPageContainer;
+// export default MainPageContainer;
