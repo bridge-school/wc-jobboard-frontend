@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Navigation from '../../components/navigation/Navigation';
+import Header from '../../components/header/Header';
 import { connect } from 'react-redux';
 import { jobsRef } from '../../App';
 import {checkApiServer} from '../../api/index';
@@ -15,11 +16,16 @@ class MainPage extends Component {
 	render() {
 		const {path, color, title} = this.props
 		return (
+		<div>
 			<div>
 				<Navigation path={path} color={color} title={title}></Navigation>
 			</div>
-		)
-	}
+			<div>
+				<Header></Header>
+			</div>
+		</div>
+	)
+
 }
 
 const MainPageContainer = connect(
