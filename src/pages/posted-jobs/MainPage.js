@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
 import Navigation from '../../components/navigation/Navigation';
 import { connect } from 'react-redux';
-import DropDown from "../../components/navigation/DropDown";
-import SearchField from "../../components/navigation/SearchField";
-import '../../assets/header.module.css';
+// import { jobsRef } from '../../App';
 import Header from '../../components/header/Header';
 import {checkApiServer} from '../../api/index';
-import '../../assets/styles.module.css';
-
 
 // const styles = theme => ({
   // searchForm: {
@@ -35,9 +31,9 @@ import '../../assets/styles.module.css';
 // })
 
 
-const mapDispatchToProps = {
+// const mapDispatchToProps = {
 
-}
+// }
 
 class MainPage extends Component {
   componentDidMount(){
@@ -61,10 +57,11 @@ class MainPage extends Component {
   )
   }
 }
+export default MainPage;
 
 const MainPageContainer = connect(
   null, // state
   mapDispatchToProps, //dispatch action - this is where we pass the thunk
 )(MainPage)
 
-export default MainPageContainer;
+// export default MainPageContainer;
