@@ -1,7 +1,7 @@
 // NPM
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+// import Card from '@material-ui/core/Card';
 // import { connect } from 'react-redux';
 // import TextField from '@material-ui/core/TextField';
 // import Input from '@material-ui/core/Input';
@@ -14,10 +14,10 @@ import Card from '@material-ui/core/Card';
 // import ReactLoading from 'react-loading';
 
 // App
-import StyledButton from '../../components/common/StyledButton';
-import FormField from '../../components/common/FormField';
-import EmployeeBenefits from './EmployeeBenefits';
-import JobInfo from './JobInfo';
+// import StyledButton from '../../components/common/StyledButton';
+// import FormField from '../../components/common/FormField';
+// import EmployeeBenefits from './EmployeeBenefits';
+// import JobInfo from './JobInfo';
 
 // import ImageUpload from 'appCommon/ImageUpload';
 // import DefaultLayout from '../../components/layouts/Default';
