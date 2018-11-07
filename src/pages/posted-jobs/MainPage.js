@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import Navigation from '../../components/navigation/Navigation';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 // import { jobsRef } from '../../App';
+import Header from '../../components/header/Header';
 import {checkApiServer} from '../../api/index';
 
-// const mapDispatchToProps = {
+const mapDispatchToProps = {
 
-// }
+}
 
 class MainPage extends Component {
 	componentDidMount(){
@@ -15,17 +16,21 @@ class MainPage extends Component {
 	render() {
 		const {path, color, title} = this.props
 		return (
+		<div>
 			<div>
 				<Navigation path={path} color={color} title={title}></Navigation>
 			</div>
-		)
+			<div>
+				<Header></Header>
+			</div>
+		</div>
+	)
 	}
 }
-export default MainPage;
 
-// const MainPageContainer = connect(
-// 	null, // state
-// 	mapDispatchToProps, //dispatch action - this is where we pass the thunk
-// )(MainPage)
+const MainPageContainer = connect(
+	null, // state
+	mapDispatchToProps, //dispatch action - this is where we pass the thunk
+)(MainPage)
 
-// export default MainPageContainer;
+export default MainPageContainer;
