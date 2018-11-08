@@ -3,8 +3,13 @@ import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import StyledButton from './components/common/StyledButton';
 import JobForm from './pages/create-job/JobForm';
+<<<<<<< 443c47587041ab3470d52f368cd738029351288f
 import MainPage from './pages/posted-jobs/MainPage';
 import Navigation from './components/navigation/Navigation';
+=======
+import JobPostCard from './components/common/JobPostCard';
+// import Navigation from './components/navigation/Navigation';
+>>>>>>> starting job post card
 
 // Redux
 import { Provider } from 'react-redux';
@@ -40,6 +45,7 @@ const CreateJobPage = (props) => {
 class App extends Component {
   render(props) {
     return (
+<<<<<<< 443c47587041ab3470d52f368cd738029351288f
       <Provider store={store}>        
         <Router>
           <div> 
@@ -48,6 +54,22 @@ class App extends Component {
           </div>
         </Router>
       </Provider>
+=======
+      <React.Fragment>
+      <Router>
+        <div>
+          <StyledButton component={Link} to="/jobs/post-a-job" color="primary">
+            Post a Job
+          </StyledButton>
+
+          {/* <Navigation /> */}
+          <Route path="/jobs/post-a-job" exact component={CreateJobPage} />
+
+        </div>
+      </Router>
+      <JobPostCard />
+      </React.Fragment>
+>>>>>>> starting job post card
     );
   }
 }
