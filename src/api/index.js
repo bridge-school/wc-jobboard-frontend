@@ -12,3 +12,21 @@ export const checkApiServer = () =>
         .catch((err) => {
             console.log(err);
         });
+
+
+export const postFormObject = () => {
+    fetch(`${API_BASE_URL}/test`, {
+        method: 'post',
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: 'TEST BODY'
+      })
+      .then(function (data) {
+        console.log('Request succeeded with JSON response', data);
+      })
+      .catch(function (error) {
+        console.log('Request failed', error);
+      });
+}
+

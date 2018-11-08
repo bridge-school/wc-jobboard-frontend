@@ -1,6 +1,7 @@
 // NPM
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import { postFormObject } from '../../api/index';
 // import Card from '@material-ui/core/Card';
 // import { connect } from 'react-redux';
 // import TextField from '@material-ui/core/TextField';
@@ -52,6 +53,7 @@ const styles = theme => ({
 const handleJobFormSubmit = (values) => {
   // this is where we push to firebase
   console.log(values)
+  postFormObject();
 }
 
 const JobFormComponent = ({ handleSubmit, classes}) => {
