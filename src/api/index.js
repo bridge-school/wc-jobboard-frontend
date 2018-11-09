@@ -1,6 +1,6 @@
 // base API URL
-// const API_BASE_URL = process.env.NODE_ENV === 'production' ? '' : 'http://wc-jobboard-backend.bridgeschoolapp.io';
-const API_BASE_URL = 'http://localhost:8081'
+const API_BASE_URL = process.env.NODE_ENV === 'production' ? 'http://wc-jobboard-backend.bridgeschoolapp.io' : '';
+// const API_BASE_URL_POST = process.env.NODE_ENV === 'production' ? '' : 'http://wc-jobboard-backend.bridgeschoolapp.io';
 
 // example API method
 export const checkApiServer = () =>
@@ -13,20 +13,20 @@ export const checkApiServer = () =>
             console.log(err);
         });
 
-
-export const postFormObject = () => {
-    fetch(`${API_BASE_URL}/test`, {
+export const postFormObject = ( values) => {
+    console.log('post:' , values)
+    fetch(`${API_BASE_URL}/jobs/post-a-job`, {
         method: 'post',
         headers: {
             "Content-type": "application/json"
         },
-        body: 'TEST BODY'
-      })
-      .then(function (data) {
+        body: JSON.stringify(values)
+        })
+        .then(function (data) {
         console.log('Request succeeded with JSON response', data);
-      })
-      .catch(function (error) {
+        })
+        .catch(function (error) {
         console.log('Request failed', error);
-      });
+        });
 }
 

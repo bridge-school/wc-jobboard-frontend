@@ -53,7 +53,7 @@ const styles = theme => ({
 const handleJobFormSubmit = (values) => {
   // this is where we push to firebase
   console.log(values)
-  postFormObject();
+  postFormObject(values);
 }
 
 const JobFormComponent = ({ handleSubmit, classes}) => {
