@@ -14,6 +14,7 @@ import Logo from '../../assets/images/logo_women_and_color.svg';
 import StyledButton from '../common/StyledButton';
 
 
+
 const styles = theme => ({
   root: {
     width: '100%',
