@@ -21,7 +21,7 @@ const styles = theme => ({
 class Header extends Component {
   render() {
     return (
-      <Grid container justify="center" className="banner" spacing={0}>
+      <Grid container justify="center" spacing={0}>
         <Grid item xs={10} md={8}>
           <h2 className="headline">
             Find an inclusive workplace<span></span> where you belong.

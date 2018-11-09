@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import Navigation from '../../components/navigation/Navigation';
 import { connect } from 'react-redux';
+import DropDown from "../../components/navigation/DropDown";
+import SearchField from "../../components/navigation/SearchField";
+import '../../assets/header.module.css';
 // import { jobsRef } from '../../App';
 import Header from '../../components/header/Header';
 import {checkApiServer} from '../../api/index';
@@ -16,14 +19,18 @@ class MainPage extends Component {
   render() {
     const {path, color, title} = this.props
     return (
-    <div>
+    <form className="banner">
       <div>
         <Navigation path={path} color={color} title={title}></Navigation>
       </div>
       <div>
-        <Header></Header>
+        <Header />
       </div>
-    </div>
+      <div className="SearchFieldMain searchForm">
+        <SearchField />
+        <DropDown />
+      </div>
+    </form>
   )
   }
 }
