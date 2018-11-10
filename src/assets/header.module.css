@@ -53,11 +53,4 @@
   .headline {
     font-size: 1.4rem;
   }
-
-  .SearchFieldMain {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-  }
 }
