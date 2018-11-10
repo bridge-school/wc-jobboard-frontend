@@ -1,8 +1,8 @@
 // NPM
 import React, { Component } from 'react'
 // import { navigate } from 'gatsby'
-import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
+// import IconButton from '@material-ui/core/IconButton';
+// import SearchIcon from '@material-ui/icons/Search';
 import TextField from '@material-ui/core/TextField';
 // import { connect } from 'react-redux'
 import { withStyles } from '@material-ui/core/styles';

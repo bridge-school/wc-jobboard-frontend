@@ -3,7 +3,7 @@ import Navigation from '../../components/navigation/Navigation';
 import { connect } from 'react-redux';
 import DropDown from "../../components/navigation/DropDown";
 import SearchField from "../../components/navigation/SearchField";
-import { withStyles } from '@material-ui/core/styles';
+// import { withStyles } from '@material-ui/core/styles';
 
 // imports background image and hero text as a 'banner' className
 import '../../assets/header.module.css';
