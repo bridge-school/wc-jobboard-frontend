@@ -17,7 +17,7 @@ import FormField from '../../components/common/FormField';
 // import ImageUpload from 'appCommon/ImageUpload';
 // import DefaultLayout from '../../components/layouts/Default';
 
-import '../../assets/benefits.module.css';
+import css from '../../assets/benefits.module.css';
 
 const EmployeeBenefits = (props) => {
     return (
@@ -27,7 +27,7 @@ const EmployeeBenefits = (props) => {
         <FormField>
           <FormLabel 
             component="legend" 
-            className="hightlight"
+            className={css.hightlight}
             size="small"
           >
             Bathrooms
@@ -59,7 +59,7 @@ const EmployeeBenefits = (props) => {
           </FormGroup>
         </FormField>
 
-        <FormField fullWidth className="hightlight">
+        <FormField fullWidth className={css.hightlight}>
           <FormLabel component="legend" >
             Days Off
           </FormLabel>
@@ -90,7 +90,7 @@ const EmployeeBenefits = (props) => {
           </FormGroup>
         </FormField>
 
-        <FormField fullWidth className="hightlight">
+        <FormField fullWidth className={css.hightlight}>
           <FormLabel component="legend">
             Employee development
           </FormLabel>

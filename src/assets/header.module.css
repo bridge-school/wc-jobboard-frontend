@@ -7,7 +7,7 @@
 .banner {
   background-color: var(--color-primary);
   padding-top: 6rem;
-  padding-bottom: 60rem;
+  padding-bottom: 20rem;
   margin-bottom: 2rem;
   background: url(https://s3.ca-central-1.amazonaws.com/womenandcolor/background-image.jpg) no-repeat center center fixed;
   background-size: cover;

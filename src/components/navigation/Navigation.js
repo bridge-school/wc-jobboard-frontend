@@ -47,7 +47,6 @@ class Navigation extends Component {
                   </Grid>
                    <Grid item xs={6} md={4}>
                     <Grid container justify="flex-end">
-                  {/*how to add a button in a specific file and not here?*/}
                     <StyledButton component={Link} to={this.props.path} color={this.props.color} >
                       {this.props.title}
                     </StyledButton>
