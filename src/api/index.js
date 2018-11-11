@@ -4,8 +4,7 @@ const API_BASE_URL = process.env.NODE_ENV === 'production' ? 'http://wc-jobboard
 
 // example API method
 export const checkApiServer = () =>
-    console.log('in the function')
-
+    console.log('fetch data')
     fetch(`${API_BASE_URL}/jobs`)
         .then((res) => {
             console.log('fetched');
