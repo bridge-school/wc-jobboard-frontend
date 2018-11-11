@@ -1,7 +1,9 @@
 // NPM
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+import { postFormObject } from '../../api/index';
+// const  { DOM: { input, select, textarea } } = React
+// import Card from '@material-ui/core/Card';
 // import { connect } from 'react-redux';
 // import TextField from '@material-ui/core/TextField';
 // import Input from '@material-ui/core/Input';
@@ -14,18 +16,22 @@ import Card from '@material-ui/core/Card';
 // import ReactLoading from 'react-loading';
 
 // App
-import StyledButton from '../../components/common/StyledButton';
-import FormField from '../../components/common/FormField';
-import EmployeeBenefits from './EmployeeBenefits';
-import JobInfo from './JobInfo';
+// import StyledButton from '../../components/common/StyledButton';
+// import FormField from '../../components/common/FormField';
+// import EmployeeBenefits from './EmployeeBenefits';
+// import JobInfo from './JobInfo';
 
 // import ImageUpload from 'appCommon/ImageUpload';
 // import DefaultLayout from '../../components/layouts/Default';
 // import css from '../../assets/onboarding.module.css';
 
+// Form Reducer
+import { Field, reduxForm } from 'redux-form';
+
 const styles = theme => ({
   createJob: {
-    background: '#EFEEEA'
+    background: '#EFEEEA',
+    paddingTop: '100px'
   },
   card: {
     borderRadius: '8px',
@@ -38,36 +44,61 @@ const styles = theme => ({
   jobHeader: {
     maxWidth: '1000px',
     margin: 'auto',
+    
   },
   adjacentButtons: {
     display: 'block'
   }
 })
 
-const JobForm = ({ handleSubmit, classes}) => {
-  return (
-    <form onSubmit={handleSubmit} className={classes.createJob}>
-        <h1 className={classes.jobHeader}>Post a job</h1>
-        <Card elevation={0} className={classes.card}>
-          <JobInfo />
-        </Card>
-        
-        <Card elevation={0} className={classes.card}>
-          <EmployeeBenefits />
-        </Card>
+const handleJobFormSubmit = (values) => {
+  // this is where we push to firebase
+  console.log(values)
+  postFormObject(values);
+}
 
-        <Card elevation={0} className={classes.card}>
-          <FormField className={classes.adjacentButtons}>
-            <StyledButton label="Submit" type="submit" color="primary">
-              Post a Job
-          </StyledButton>
-            <StyledButton label="Clear" type="submit" color="secondary">
-              Clear All
-          </StyledButton>
-          </FormField>
-        </Card>
-      </form>
+const JobFormComponent = ({ handleSubmit, classes}) => {
+  
+  return (
+    <form onSubmit={handleSubmit(handleJobFormSubmit)}>
+      <div>
+        <label htmlFor="firstName">First Name</label>
+        <Field name="firstName" component="input" type="text" />
+        <label htmlFor="firstName">Last Name</label>
+        <Field name="LastName" component="input" type="text" />
+        <div>
+          <Field name="benefits" id="employed" component="input" type="checkbox"/>
+        </div>
+      </div>
+      <button type="submit">
+        Submit
+      </button>
+    </form>
+    // <form onSubmit={handleSubmit} className={classes.createJob}>
+    //     <h1 className={classes.jobHeader}>Post a job</h1>
+    //     <Card elevation={0} className={classes.card}>
+    //       <JobInfo />
+    //     </Card>
+        
+    //     <Card elevation={0} className={classes.card}>
+    //       <EmployeeBenefits />
+    //     </Card>
+
+    //     <Card elevation={0} className={classes.card}>
+    //       <FormField className={classes.adjacentButtons}>
+    //         <StyledButton label="Submit" type="submit" color="primary">
+    //           Post a Job
+    //       </StyledButton>
+    //         <StyledButton label="Clear" type="submit" color="secondary">
+    //           Clear All
+    //       </StyledButton>
+    //       </FormField>
+    //     </Card>
+    //   </form>
   );
 };
+const JobForm = reduxForm({
+  form: 'jobs'
+})(JobFormComponent)
 
 export default withStyles(styles)(JobForm);
