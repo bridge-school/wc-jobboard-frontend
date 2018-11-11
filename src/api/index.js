@@ -4,11 +4,14 @@ const API_BASE_URL = process.env.NODE_ENV === 'production' ? 'http://wc-jobboard
 
 // example API method
 export const checkApiServer = () =>
-    console.log('fetch data')
+    console.log('in the function')
 
     fetch(`${API_BASE_URL}/jobs`)
-        .then((res) => res.json())
-        .then((response) => {
+        .then((res) => {
+            console.log('fetched');
+            return res.json()
+        })
+        .then((data) => {
             console.log(response);
         })
         .catch((err) => {
@@ -26,9 +29,9 @@ export const postFormObject = ( values) => {
         body: JSON.stringify(values) 
         })
         .then(function (data) {
-        console.log('Request succeeded with JSON response', data);
+            console.log('Request succeeded with JSON response', data);
         })
         .catch(function (error) {
-        console.log('Request failed', error);
+            console.log('Request failed', error);
         });
 }
