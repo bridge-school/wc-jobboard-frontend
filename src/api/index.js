@@ -14,9 +14,13 @@ export const checkApiServer = () =>
             return res.json()
         })
         .then((data) => {
+<<<<<<< 6acd440483ce5ba65847f8d915735e895a2b498b
 
             console.log(data);
 
+=======
+            console.log(response);
+>>>>>>> syncing with upstream
         })
         .catch((err) => {
             console.log(err);
