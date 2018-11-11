@@ -2,6 +2,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { postFormObject } from '../../api/index';
+// const  { DOM: { input, select, textarea } } = React
 // import Card from '@material-ui/core/Card';
 // import { connect } from 'react-redux';
 // import TextField from '@material-ui/core/TextField';
@@ -63,6 +64,11 @@ const JobFormComponent = ({ handleSubmit, classes}) => {
       <div>
         <label htmlFor="firstName">First Name</label>
         <Field name="firstName" component="input" type="text" />
+        <label htmlFor="firstName">Last Name</label>
+        <Field name="LastName" component="input" type="text" />
+        <div>
+          <Field name="benefits" id="employed" component="input" type="checkbox"/>
+        </div>
       </div>
       <button type="submit">
         Submit
