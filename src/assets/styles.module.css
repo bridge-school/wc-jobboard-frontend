@@ -68,11 +68,11 @@ body {
   border: 1px solid transparent;
 }
 
-.button-primary {
+/* .button-primary {
   composes: button;
   background-color: var(--color-primary);
   color: #ffffff;
-}
+} */
 .input {
   line-height: 2.8rem;
   -webkit-appearance: none;

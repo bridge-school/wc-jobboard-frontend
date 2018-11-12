@@ -28,14 +28,14 @@ const styles = theme => ({
 const JobInfo = () => {
     return (
         <div>
-            <h2 className={css.registrationFormHeader}>Job Info</h2>
-            <FormField className={css.formControl}>
+            <h2>Job Info</h2>
+            <FormField>
             {/* <ImageUpload /> */}
             <StyledButton label="Clear" type="submit" color="secondary">
                 Select logo
-                </StyledButton>
+            </StyledButton>
             </FormField>
-            <FormField fullWidth className={css.formControl}>
+            <FormField>
             <TextField
                 required
                 label="Job title"
@@ -45,7 +45,7 @@ const JobInfo = () => {
             />
             </FormField>
 
-            <FormField fullWidth className={css.formControl}>
+            <FormField>
             <TextField
                 required
                 label="Company name"

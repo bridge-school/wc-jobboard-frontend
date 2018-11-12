@@ -23,7 +23,6 @@ const EmployeeBenefits = (props) => {
     return (
         <div>
         <h2>Employee Benefits</h2>
-
         <FormField>
           <FormLabel 
             component="legend" 
@@ -58,96 +57,98 @@ const EmployeeBenefits = (props) => {
             />
           </FormGroup>
         </FormField>
-
-        <FormField fullWidth className={css.hightlight}>
-          <FormLabel component="legend" >
-            Days Off
-          </FormLabel>
-          <FormGroup
-            aria-label=""
-            name="Days Off"
-          >
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Health"
-            />
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Personal"
-            />
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Professional development"
-            />
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Religious holidays"
-            />
-          </FormGroup>
-        </FormField>
-
-        <FormField fullWidth className={css.hightlight}>
-          <FormLabel component="legend">
-            Employee development
-          </FormLabel>
-          <FormGroup
-            aria-label=""
-            name="Employee development"
-          >
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Career coaching"
-            />
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Employee resource groups"
-            />
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Internal hackathons"
-            />
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Lunch and learns"
-            />
-            {/* <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Mentorship program"
-            />
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Performance review (annual)"
-            />
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Performance review (semi-annual)"
-            />
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Professional development budget"
-            />
-            <FormControlLabel
-              value="false"
-              control={<Checkbox color="primary" />}
-              label="Tuition reimbursement"
-            /> */}
-          </FormGroup>
-        </FormField>
         </div>
 
     )
 }
 
 export default EmployeeBenefits;
+
+
+
+        // <FormField fullWidth className={css.hightlight}>
+        //   <FormLabel component="legend" >
+        //     Days Off
+        //   </FormLabel>
+        //   <FormGroup
+        //     aria-label=""
+        //     name="Days Off"
+        //   >
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Health"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Personal"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Professional development"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Religious holidays"
+        //     />
+        //   </FormGroup>
+        // </FormField>
+
+        // <FormField fullWidth className={css.hightlight}>
+        //   <FormLabel component="legend">
+        //     Employee development
+        //   </FormLabel>
+        //   <FormGroup
+        //     aria-label=""
+        //     name="Employee development"
+        //   >
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Career coaching"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Employee resource groups"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Internal hackathons"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Lunch and learns"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Mentorship program"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Performance review (annual)"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Performance review (semi-annual)"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Professional development budget"
+        //     />
+        //     <FormControlLabel
+        //       value="false"
+        //       control={<Checkbox color="primary" />}
+        //       label="Tuition reimbursement"
+        //     />
+        //   </FormGroup>
+        // </FormField>
