@@ -12,7 +12,7 @@ export const checkApiServer = () =>
             return res.json()
         })
         .then((data) => {
-            console.log(response);
+            console.log(data);
         })
         .catch((err) => {
             console.log(err);
