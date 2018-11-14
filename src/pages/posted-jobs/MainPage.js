@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Navigation from '../../components/navigation/Navigation';
-import { connect } from 'react-redux';
+
 import DropDown from "../../components/navigation/DropDown";
 import SearchField from "../../components/navigation/SearchField";
 import '../../assets/header.module.css';
@@ -11,9 +11,6 @@ import CheckboxOption from "../../components/common/CheckboxOption";
 import {checkApiServer} from '../../api/index';
 import Checkbox from '@material-ui/core/Checkbox';
 
-const mapDispatchToProps = {
-
-}
 
 class MainPage extends Component {
   componentDidMount(){
@@ -34,7 +31,9 @@ class MainPage extends Component {
         <DropDown />
       </div>
       <div className="postedJobs">
+      <div className="listedJobs">
       <ListedJobs />
+      </div>
       <div className="jobFilter">
       <JobFilters filterTitle="Bathroom">
         <CheckboxOption
@@ -327,9 +326,9 @@ class MainPage extends Component {
   }
 }
 
-const MainPageContainer = connect(
-  null, // state
-  mapDispatchToProps, //dispatch action - this is where we pass the thunk
-)(MainPage)
+// const MainPageContainer = connect(
+//   null, // state
+//   mapDispatchToProps, //dispatch action - this is where we pass the thunk
+// )(MainPage)
 
-export default MainPageContainer;
+export default MainPage;
