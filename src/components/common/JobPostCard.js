@@ -28,14 +28,14 @@ const styles = theme => ({
   }
 })
 
-const JobPostCard = ( { classes } ) => {
+const JobPostCard = ( { classes, primary, secondary, logo } ) => {
   return (
     <List>
       <ListItem>
         <div className={classes.logoContainer}>
-          <img className={classes.logo} src="https://6fszjoe6bk-flywheel.netdna-ssl.com/wp-content/uploads/2015/05/1405612741-airbnb-why-new-logo.jpg" alt=""/>
+          <img className={classes.logo} src={logo} alt=""/>
         </div>
-        <ListItemText primary="Company" secondary="Position" />
+        <ListItemText primary={primary} secondary={secondary} />
       </ListItem>
     </List>
       

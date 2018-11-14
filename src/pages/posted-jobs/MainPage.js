@@ -3,6 +3,7 @@ import Navigation from '../../components/navigation/Navigation';
 import { connect } from 'react-redux';
 import DropDown from "../../components/navigation/DropDown";
 import SearchField from "../../components/navigation/SearchField";
+import JobPostCard from '../../components/common/JobPostCard';
 import '../../assets/header.module.css';
 import Header from '../../components/header/Header';
 import ListedJobs from "../../components/common/ListedJobs";
@@ -11,17 +12,29 @@ import CheckboxOption from "../../components/common/CheckboxOption";
 import {checkApiServer} from '../../api/index';
 import Checkbox from '@material-ui/core/Checkbox';
 
-const mapDispatchToProps = {
+import '../../assets/styles.module.css';
+import { setJobs } from './jobs-actions';
+import { jobsReducer } from './jobsReducer';
 
+const mapDispatchToProps = {
+  setJobs
 }
+
+const mapStateToProps = state => ({
+  jobs: state.jobs
+});
 
 class MainPage extends Component {
   componentDidMount(){
     checkApiServer()
+    .then(data => this.props.setJobs(data));
   }
+  
   render() {
-    const {path, color, title} = this.props
+    const {path, color, title, jobs} = this.props
+    console.log(jobs)
     return (
+    <React.Fragment>
     <div className="banner">
       <div>
         <Navigation path={path} color={color} title={title}></Navigation>
@@ -33,6 +46,7 @@ class MainPage extends Component {
         <SearchField />
         <DropDown />
       </div>
+
       <div className="postedJobs">
       <ListedJobs />
       <div className="jobFilter">
@@ -323,12 +337,21 @@ class MainPage extends Component {
       </div>
       </div>
     </div>
+
+    <div>
+      {
+        jobs.map(job => (
+          <JobPostCard primary={job.companyName} secondary={job.title} logo={job.logo}/>
+        ))
+      }
+    </div>
+    </React.Fragment>
   )
   }
 }
 
 const MainPageContainer = connect(
-  null, // state
+  mapStateToProps, // state
   mapDispatchToProps, //dispatch action - this is where we pass the thunk
 )(MainPage)
 

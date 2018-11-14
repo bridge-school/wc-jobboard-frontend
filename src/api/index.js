@@ -6,14 +6,13 @@ const API_BASE_URL = process.env.NODE_ENV === 'production' ? 'http://wc-jobboard
 
 // example API method
 export const checkApiServer = () =>
-    console.log('in the function')
-
     fetch(`${API_BASE_URL}/jobs`)
         .then((res) => {
             console.log('fetched');
             return res.json()
         })
         .then((data) => {
+<<<<<<< 51b99095893bcaadb47bdb927468596b9df57370
 <<<<<<< 6acd440483ce5ba65847f8d915735e895a2b498b
 
             console.log(data);
@@ -21,10 +20,13 @@ export const checkApiServer = () =>
 =======
             console.log(response);
 >>>>>>> syncing with upstream
+=======
+            console.log(data);
+            return data;
+>>>>>>> mapping job post card, setting up redux and actions
         })
         .catch((err) => {
-            console.log(err);
-
+            console.log('Error fetching jobs', err);
         });
 
 export const postFormObject = ( values) => {
