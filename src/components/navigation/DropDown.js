@@ -9,19 +9,10 @@ import OutlinedInput from '@material-ui/core/OutlinedInput';
 
 
 const styles = theme => ({
-  // root: {
-  //   // display: 'flex',
-  //   // flexWrap: 'wrap',
-  //   order: 2,
-  // },
   formControl: {
     margin: theme.spacing.unit *2.5,
     minWidth: '12em',
-  },
-  // selectEmpty: {
-  //   marginTop: theme.spacing.unit * 2,
-  //   width: theme.spacing.unit * 20,
-  // },
+  }
 });
 
 
@@ -36,22 +27,13 @@ class DropDown extends Component {
       <div>
         <form >
           <FormControl variant="outlined" className={classes.formControl}>
-          <InputLabel
-            // ref={ref => {
-            //   this.InputLabelRef = ref;
-            // }}
-            // htmlFor="outlined-age-simple"
-          >
+          <InputLabel>
             All cities
           </InputLabel>
           <Select
-            // value={this.state.age}
             onChange={this.handleChange}
             input={
               <OutlinedInput
-                // labelWidth={this.state.labelWidth}
-                // name="age"
-                // id="outlined-age-simple"
               />
             }
           >

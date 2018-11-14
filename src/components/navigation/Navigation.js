@@ -5,9 +5,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import { Link } from "react-router-dom";
-// import Hidden from '@material-ui/core/Hidden';
-// import { connect } from 'react-redux';
-// import PropTypes from 'prop-types';
 
 // App
 import Logo from '../../assets/images/logo_women_and_color.svg';
