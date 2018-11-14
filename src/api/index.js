@@ -1,6 +1,8 @@
 // base API URL
-
+import { JSONdata } from '../data-structure'
 const API_BASE_URL = process.env.NODE_ENV === 'production' ? 'http://wc-jobboard-backend.bridgeschoolapp.io' : '';
+// const API_BASE_URL = process.env.NODE_ENV === 'production' ? '' : 'http://wc-jobboard-backend.bridgeschoolapp.io';
+
 
 // example API method
 export const checkApiServer = () =>
@@ -12,7 +14,9 @@ export const checkApiServer = () =>
             return res.json()
         })
         .then((data) => {
+
             console.log(data);
+
         })
         .catch((err) => {
             console.log(err);
@@ -35,3 +39,16 @@ export const postFormObject = ( values) => {
             console.log('Request failed', error);
         });
 }
+
+
+
+
+
+// SearchField functionality
+export const search = (string) => {
+    console.log(string)
+	const dbSearch = new Promise((resolve, reject) =>  {
+		resolve(JSONdata)
+	})
+	return dbSearch;
+};

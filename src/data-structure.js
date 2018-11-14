@@ -1,4 +1,4 @@
-export const JSONdata = {
+export const JSONdata = [{
     logo: "https://6fszjoe6bk-flywheel.netdna-ssl.com/wp-content/uploads/2015/05/1405612741-airbnb-why-new-logo.jpg",
     title: "Web Developer",
     companyName: "Airbnb",
@@ -79,4 +79,4 @@ export const JSONdata = {
             quarterly_outings: true
         }
     }
-}
+}]

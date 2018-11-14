@@ -9,6 +9,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 // APP
 // import { updateSearchParams } from 'appRedux/modules/speaker';
+import { search } from '../../api'
 
 const styles = theme => ({
   // container: {
@@ -25,7 +26,16 @@ const styles = theme => ({
   // },
 })
 
+
+
+
 class SearchField extends Component {
+  handleChange(event) {
+    search(event.target.value).then((searchResult) => {
+      console.log(searchResult)
+    })
+  }
+
   render() {
     const { classes } = this.props;
     return (
@@ -36,6 +46,7 @@ class SearchField extends Component {
           type="search"
           className={classes.textField}
           variant="outlined"
+          onChange={this.handleChange}
         >
        </TextField>
       </form>

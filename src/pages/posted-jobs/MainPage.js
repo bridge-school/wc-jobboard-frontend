@@ -5,8 +5,13 @@ import DropDown from "../../components/navigation/DropDown";
 import SearchField from "../../components/navigation/SearchField";
 import '../../assets/header.module.css';
 import Header from '../../components/header/Header';
+import ListedJobs from "../../components/common/ListedJobs";
+import JobFilters from "../../components/common/JobFilters";
+import CheckboxOption from "../../components/common/CheckboxOption";
 import {checkApiServer} from '../../api/index';
-import '../../assets/styles.module.css';
+import Checkbox from '@material-ui/core/Checkbox';
+// import '../../assets/styles.module.css';
+
 
 
 // const styles = theme => ({
@@ -34,7 +39,6 @@ import '../../assets/styles.module.css';
   // },
 // })
 
-
 const mapDispatchToProps = {
 
 }
@@ -46,7 +50,7 @@ class MainPage extends Component {
   render() {
     const {path, color, title} = this.props
     return (
-    <form className="banner">
+    <div className="banner">
       <div>
         <Navigation path={path} color={color} title={title}></Navigation>
       </div>
@@ -57,7 +61,58 @@ class MainPage extends Component {
         <SearchField />
         <DropDown />
       </div>
-    </form>
+      <div className="postedJobs">
+      <ListedJobs />
+      <div className="jobFilter">
+      <JobFilters filterTitle="Bathroom">
+        <CheckboxOption
+                // value="false"
+                control={<Checkbox color="primary" />}
+                label="Baby change table"
+                >
+        </CheckboxOption>
+                <CheckboxOption
+                // value="false"
+                control={<Checkbox color="primary" />}
+                label="Gender neutral"
+                >
+        </CheckboxOption>
+                <CheckboxOption
+                // value="false"
+                control={<Checkbox color="primary" />}
+                label="Single stall"
+                >
+        </CheckboxOption>
+                <CheckboxOption
+                // value="false"
+                control={<Checkbox color="primary" />}
+                label="Wheelchair accesible stalls"
+                >
+        </CheckboxOption>
+      </JobFilters>
+      <JobFilters filterTitle="Days off">
+        <CheckboxOption
+                // value="false"
+                control={<Checkbox color="primary" />}
+                label="Health"
+                >
+        </CheckboxOption>
+                <CheckboxOption
+                // value="false"
+                control={<Checkbox color="primary" />}
+                label="Personal"
+                >
+        </CheckboxOption>
+                <CheckboxOption
+                // value="false"
+                control={<Checkbox color="primary" />}
+                label="Professional development"
+                >
+        </CheckboxOption>
+      </JobFilters>
+      </div>
+      </div>
+    </div>
   )
   }
 }

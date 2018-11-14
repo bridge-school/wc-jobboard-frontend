@@ -26,6 +26,10 @@ const styles = theme => ({
 
 
 class DropDown extends Component {
+  handleChange(event) {
+    console.log(event)
+    this.setState({city: event.target.value})
+  }
   render() {
   	const { classes } = this.props;
     return (
@@ -42,7 +46,7 @@ class DropDown extends Component {
           </InputLabel>
           <Select
             // value={this.state.age}
-            // onChange={this.handleChange}
+            onChange={this.handleChange}
             input={
               <OutlinedInput
                 // labelWidth={this.state.labelWidth}
@@ -51,12 +55,12 @@ class DropDown extends Component {
               />
             }
           >
-            <MenuItem value="">
+            <MenuItem value={0}>
               <em>None</em>
             </MenuItem>
-            <MenuItem>Toronto</MenuItem>
-            <MenuItem>Montreal</MenuItem>
-            <MenuItem>Vancouver</MenuItem>
+            <MenuItem value={1}>Toronto</MenuItem>
+            <MenuItem value={2}>Montreal</MenuItem>
+            <MenuItem value={3}>Vancouver</MenuItem>
           </Select>
         </FormControl>
         </form>

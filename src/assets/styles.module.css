@@ -96,6 +96,29 @@ body {
   order: 1;
 }
 
+.postedJobs {
+  background-color: var(--color-inverted-light);
+  margin-top: 2rem;
+  border: 1px solid var(--color-grey-light);
+  border-radius: 4px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.jobFilter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*
+.filterOptions {
+  flex-direction: column;
+}*/
+
 .profilePhoto {
   background: #e5e8f5;
   border-radius: 50%;
