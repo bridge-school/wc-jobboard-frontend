@@ -103,7 +103,7 @@ body {
   border-radius: 4px;
   padding: 6px;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: space-between;
   margin-left: 200px;
   margin-right: 200px;
@@ -114,10 +114,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-/*
-.filterOptions {
-  flex-direction: column;
-}*/
+
+.listedJobs {
+  align-content: flex-start;
+}
 
 .profilePhoto {
   background: #e5e8f5;
