@@ -84,6 +84,7 @@ const JobFormComponent = ({ handleSubmit, classes, reset}) => {
           <Field name="city" component={renderTextField} type="text" label="City" validate={[ required]} className={classes.text}/>
           <br/>
           <Field name="link" component={renderTextField} type="text" label="Link for job post" validate={[ required]} className={classes.text}/>
+
           <br/>
         </Card>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+
 import FormControl from '@material-ui/core/FormControl';
 
 export const renderTextField = ({ input, label,}) => (
