@@ -19,7 +19,7 @@ const styles = theme => ({
 class DropDown extends Component {
   handleChange(event) {
     console.log(event)
-    this.setState({city: event.target.value})
+    // this.setState({city: event.target.value})
   }
   render() {
   	const { classes } = this.props;
