@@ -1,17 +1,10 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
+import { jobsReducer } from './pages/posted-jobs/jobsReducer';
 
-// const initialTestState = {
-//     jobPost: 'test'
-// }
 
-// const testReducer = (state = initialTestState, action)=> {
-//     switch(action.type){
-//         default : return state;
-//     }
-// }
+
 export const rootReducer = combineReducers({
-    form: formReducer
+    form: formReducer,
+    jobs: jobsReducer,
 })
-
-// const selectCityReducer = 

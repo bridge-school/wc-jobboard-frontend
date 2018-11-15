@@ -17,9 +17,8 @@ export const renderTextField = ({ input, label,}) => (
     </FormControl>
   )
 
-export  const renderCheckbox = ({ input, label }) => (
+export const renderCheckbox = ({ input, label }) => (
     <FormControlLabel
-
         label={label}
         control={
         <Checkbox
@@ -27,7 +26,8 @@ export  const renderCheckbox = ({ input, label }) => (
             color="primary"
             label={label}
             checked={input.value ? true : false} 
-            onCheck={input.onChange}
+            value=""
+            // onCheck={input.onChange}
         />
         }
     />

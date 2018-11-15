@@ -33,7 +33,7 @@ class DropDown extends Component {
           <Select
             onChange={this.handleChange}
             input={
-              <OutlinedInput
+              <OutlinedInput labelWidth={0} value="false"
               />
             }
           >
