@@ -1,4 +1,4 @@
-const initialState = null;
+const initialState = [];
 
 export const jobsReducer = (state = initialState, action) => {
     switch(action.type){
