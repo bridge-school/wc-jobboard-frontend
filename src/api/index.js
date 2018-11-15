@@ -12,21 +12,11 @@ export const checkApiServer = () =>
             return res.json()
         })
         .then((data) => {
-<<<<<<< 51b99095893bcaadb47bdb927468596b9df57370
-<<<<<<< 6acd440483ce5ba65847f8d915735e895a2b498b
-
-            console.log(data);
-
-=======
-            console.log(response);
->>>>>>> syncing with upstream
-=======
             console.log(data);
             return data;
->>>>>>> mapping job post card, setting up redux and actions
         })
         .catch((err) => {
-            console.log('Error fetching jobs', err);
+            console.log(err);
         });
 
 export const postFormObject = ( values) => {

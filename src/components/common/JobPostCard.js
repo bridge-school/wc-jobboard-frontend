@@ -28,15 +28,17 @@ const styles = theme => ({
   }
 })
 
-const JobPostCard = ( { classes, primary, secondary, logo } ) => {
+const JobPostCard = ( { classes, primary, secondary, logo, link, key } ) => {
   return (
-    <List>
-      <ListItem>
-        <div className={classes.logoContainer}>
-          <img className={classes.logo} src={logo} alt=""/>
-        </div>
-        <ListItemText primary={primary} secondary={secondary} />
-      </ListItem>
+    <List key={key}>
+      <a href={link} target="_blank">
+        <ListItem>
+          <div className={classes.logoContainer}>
+            <img className={classes.logo} src={logo} alt=""/>
+          </div>
+          <ListItemText primary={primary} secondary={secondary} />
+        </ListItem>
+      </a>
     </List>
       
   )
