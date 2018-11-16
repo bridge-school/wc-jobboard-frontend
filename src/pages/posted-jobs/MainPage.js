@@ -10,7 +10,6 @@ import {checkApiServer} from '../../api/index';
 import JobFilterList from "./JobFilterList"
 import JobFilter from "./JobFilter"
 
-import '../../assets/styles.module.css';
 import { setJobs } from './jobs-actions';
 
 const mapDispatchToProps = {
